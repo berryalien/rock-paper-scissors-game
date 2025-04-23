@@ -44,7 +44,6 @@ body {
   margin-top: 1.5rem;
 }
 
-
 .option_images {
   display: flex;
   align-items: center;
@@ -56,13 +55,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  pointer-events: none;
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
 .option_image:hover {
+  opacity: 1;
+}
+.option_image.active {
   opacity: 1;
 }
 
@@ -74,5 +75,4 @@ body {
   color: #7d2ae8;
   font-size: 1.235rem;
   margin-top: 1rem;
-  pointer-events: none;
 }
